@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url(../PL-TASKS/fonts/Comfortaa-Regular.ttf);
+}
+
+body {
+    max-width: 1440px;
+}
+
+header {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #FDFDFD;
+}
+
+img.logo {
+    margin-left: 100px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+div.logoText {
+    font-family: Comfortaa-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    margin-left: 32px;
+    color: #FF9432;
+    margin-right: 133px;
+}
+
+nav {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+ul.topNav {
+    list-style-type: none;
+    font-family: Comfortaa-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+ul.topNav li {float: left;}
+
+ul.topNav li a {
+    display: inline-block;
+    text-align: center;
+    padding-right: 77px;
+    color: black;
+}
+
+div.appointment {
+    position: absolute;
+    width: 506px;
+    height: 668px;
+    left: 102px;
+    top: 243px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+div.outline {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 14px;
+    margin-right: 14px;
+    border-radius: 50px;
+    background-color: black;
+    border-color: #FF9432;
+}
+
+div.bgPhoto {
+    height: 890px;
+    width: 1440px;
+}
