@@ -251,6 +251,7 @@ div.specialists {
     font-style: normal;
     font-size: 48px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 div.specialists p.specP {
@@ -296,4 +297,41 @@ div.specialistsItems div {
 
 div.specialistsItems div.arrows {
     margin-top: 180px;
+}
+
+p.priem {
+    width: 584px;
+    height: 54px;
+    margin-left: 500px;
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
+    color: #000000;
+}
+
+div.placeholder7 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-left: 400px;
+    margin-top: 30px;
+    align-content: center;
+}
+
+div.placeholder8 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-top: 30px;
+    margin-left: 1050px;
+    align-content: center;
+}
+
+div.temp {
+    width: 1236px;
+    height: 1450px;
+    margin-left: 135px;
+    background: #fefff3;
+    border-radius: 50px;
 }
