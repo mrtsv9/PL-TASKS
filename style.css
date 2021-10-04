@@ -3,6 +3,13 @@
     src: url(../PL-TASKS/fonts/Comfortaa-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url(../PL-TASKS/fonts/Comfortaa-Bold.ttf);
+}
+
+@import url(default.css);
+
 body {
     max-width: 1440px;
 }
@@ -63,19 +70,230 @@ div.appointment {
     top: 243px;
     background: #FFFFFF;
     border-radius: 50px;
+    margin: 0 auto;
 }
 
-div.outline {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-left: 14px;
-    margin-right: 14px;
+div.border {
+    width: 480px;
+    height: 640px;
     border-radius: 50px;
-    background-color: black;
-    border-color: #FF9432;
+    border: dashed 3px #FF9432;
+    margin-left: 11px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+div.border p.vetClin {
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
+    text-align: left;
+    margin-left: 66px;
+    color: #FF9432;
+}
+
+div.border pre.with {
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    text-align: left;
+    margin-left: 66px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+div.border input.signUp {
+    width: 398px;
+    height: 54px;
+    background: linear-gradient(90deg, #FF9432 0%, #FFD232 99.99%, rgba(255, 148, 50, 0) 100%, #FFCF24 100%);
+    border-radius: 30px;
+    border: 0px;
+    font-family: Comfortaa-Regular;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 74px;
+}
+
+div.border input.order {
+    width: 398px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 2px solid #FF9432;
+    font-family: Comfortaa-Regular;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FF9432;
+    margin-top: 30px;
 }
 
 div.bgPhoto {
     height: 890px;
     width: 1440px;
+}
+
+div.services {
+    margin-top: 100px;
+    font-family: Comfortaa-Regular;
+    font-style: normal;
+    font-size: 48px;
+}
+
+div.services p.servP {
+    margin-left: 565px;
+}
+
+div.placeholder1 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-left: 457px;
+    margin-top: 130px;
+    align-content: center;
+}
+
+div.placeholder2 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-top: 130px;
+    margin-left: 914px;
+    align-content: center;
+}
+
+div.serviceItems {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+div.serviceItems div img {
+    height: 153px;
+    display: flex;
+    margin: 0 auto;
+}
+
+div.serviceItems div {
+    margin: 0 auto;
+    font-family: Comfortaa-Regular;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+div.video {
+    display: flex;
+    margin: 0 auto;
+    margin-left: 102px;
+}
+
+div.questions {
+    font-family: Comfortaa-Regular;
+    font-style: normal;
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+div.questions p {
+    margin-left: 627px;
+}
+
+div.placeholder3 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-left: 516px;
+    margin-top: 130px;
+    align-content: center;
+}
+
+div.placeholder4 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-top: 130px;
+    margin-left: 880px;
+    align-content: center;
+}
+
+div.questionsItems {
+    text-align: left;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+
+div.questionsItems div:first-child{
+    float: left;
+    margin-left: 235px;
+    margin-top: 10px;   
+    width: 1000px;
+}
+
+div.questionsItems div{
+    float: left;
+    margin-left: 235px;
+    margin-top: 40px;   
+    width: 1000px;
+}
+
+
+div.questionsItems div img{
+    float: right;
+}
+
+div.specialists {
+    font-family: Comfortaa-Regular;
+    font-style: normal;
+    font-size: 48px;
+    margin: 0 auto;
+}
+
+div.specialists p.specP {
+    margin-left: 480px;
+    margin-bottom: 100px;
+}
+
+div.placeholder5 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-left: 370px;
+    margin-top: 80px;
+    align-content: center;
+}
+
+div.placeholder6 {
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-top: 80px;
+    margin-left: 1005px;
+    align-content: center;
+}
+
+div.specialistsItems {
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+
+div.specialistsItems div p.name {
+    font-weight: bold;
+}
+
+div.specialistsItems div {
+    margin: 0 auto;
+}
+
+div.specialistsItems div.arrows {
+    margin-top: 180px;
 }
