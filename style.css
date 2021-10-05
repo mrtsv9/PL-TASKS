@@ -299,10 +299,8 @@ div.specialistsItems div.arrows {
     margin-top: 180px;
 }
 
-p.priem {
-    width: 584px;
-    height: 54px;
-    margin-left: 500px;
+.priem {
+    text-align: center;
     font-family: Comfortaa-Regular;
     font-size: 48px;
     color: #000000;
@@ -313,7 +311,7 @@ div.placeholder7 {
     width: 58px;
     height: 3px;
     background-color: #FF9432;
-    margin-left: 400px;
+    margin-left: 355px;
     margin-top: 30px;
     align-content: center;
 }
@@ -329,9 +327,9 @@ div.placeholder8 {
 }
 
 div.temp {
+    margin: 0 auto;
     width: 1236px;
     height: 1450px;
-    margin-left: 135px;
-    background: #fefff3;
+    background: #f7aea4;
     border-radius: 50px;
 }
