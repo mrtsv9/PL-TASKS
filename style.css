@@ -132,34 +132,41 @@ div.bgPhoto {
 }
 
 div.services {
+    text-align: center;
     margin-top: 100px;
     font-family: Comfortaa-Regular;
     font-style: normal;
     font-size: 48px;
 }
 
-div.services p.servP {
-    margin-left: 565px;
+p.servP {
+    display: flex;
+    justify-content: center;
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
 }
 
-div.placeholder1 {
-    position: absolute;
+p.servP::before {
+    content: '';
+    display: inline-block;
     width: 58px;
     height: 3px;
     background-color: #FF9432;
-    margin-left: 457px;
-    margin-top: 130px;
-    align-content: center;
+    margin-right: 32px;
 }
 
-div.placeholder2 {
-    position: absolute;
+p.servP::after {
+    content: '';
+    display: inline-block;
     width: 58px;
     height: 3px;
     background-color: #FF9432;
-    margin-top: 130px;
-    margin-left: 914px;
-    align-content: center;
+    margin-left: 32px;
+}
+
+p.servP, p.servP::before, p.servP::after {
+    display: inline-flex;
+    align-items: center;
 }
 
 div.serviceItems {
@@ -193,30 +200,37 @@ div.questions {
     font-style: normal;
     font-size: 48px;
     margin-top: 100px;
+    text-align: center;
 }
 
-div.questions p {
-    margin-left: 627px;
+p.qQuestions {
+    display: flex;
+    justify-content: center;
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
 }
 
-div.placeholder3 {
-    position: absolute;
+p.qQuestions::before {
+    content: '';
+    display: inline-block;
     width: 58px;
     height: 3px;
     background-color: #FF9432;
-    margin-left: 516px;
-    margin-top: 130px;
-    align-content: center;
+    margin-right: 32px;
 }
 
-div.placeholder4 {
-    position: absolute;
+p.qQuestions::after {
+    content: '';
+    display: inline-block;
     width: 58px;
     height: 3px;
     background-color: #FF9432;
-    margin-top: 130px;
-    margin-left: 880px;
-    align-content: center;
+    margin-left: 32px;
+}
+
+p.qQuestions, p.qQuestions::before, p.qQuestions::after {
+    display: inline-flex;
+    align-items: center;
 }
 
 div.questionsItems {
@@ -229,7 +243,6 @@ div.questionsItems {
 
 div.questionsItems div:first-child{
     float: left;
-    margin-left: 235px;
     margin-top: 10px;   
     width: 1000px;
 }
@@ -282,6 +295,7 @@ div.specialists {
     font-size: 48px;
     margin: 0 auto;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 div.specialistsItems {
@@ -305,9 +319,6 @@ div.specialistsItems div.arrows {
 }
 
 div.mkAppointment {
-    margin: 0 auto;
-    width: 1236px;
-    height: 1450px;
     text-align: center;
 }
 
@@ -339,5 +350,3 @@ p.priem, p.priem::before, p.priem::after {
     display: inline-flex;
     align-items: center;
 }
-
-
