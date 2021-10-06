@@ -153,12 +153,45 @@
 
     </div>
 
+    <!-- Подключение библиотеки jQuery  -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Подключение jQuery плагина Masked Input -->
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+
     <div class="mkAppointment">
 
         <p class="priem">Записаться на прием</p>
 
-        <div>
-            
+        <div class="blank">
+            <div class="blankBorder">
+                <div class="orderparam">
+                    <input
+                    id="orderfirstName"
+                    name="orderfirstName"
+                    type="text"
+                    placeholder="Имя*"
+                    />
+                    <input
+                    id="orderlastName"
+                    name="orderlastName"
+                    type="text"
+                    placeholder="Фамилия*"
+                    />
+                    <input
+                    id="orderphoneNumber"
+                    name="orderphoneNumber"
+                    type="tel"
+                    placeholder="Телефон*"
+                    />
+                    <script>
+                    //Код jQuery, установливающий маску для ввода телефона элементу input
+                    //1. После загрузки страницы, когда все элементы будут доступны выполнить...
+                    $(function () {
+                    //2. Получить элемент, к которому необходимо добавить маску
+                    $("#orderphoneNumber").mask("+375(99) 999-99-99");
+                    });
+                    </script>
+            </div>
         </div>
 
     </div>
