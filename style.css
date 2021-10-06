@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Comfortaa-Regular';
-    src: url(../PL-TASKS/fonts/Comfortaa-Regular.ttf);
+    src: url(../fonts/Comfortaa-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Comfortaa-Bold';
-    src: url(../PL-TASKS/fonts/Comfortaa-Bold.ttf);
+    src: url(../fonts/Comfortaa-Bold.ttf);
 }
 
 @import url(default.css);
@@ -246,37 +246,42 @@ div.questionsItems div img{
     float: right;
 }
 
+p.specP {
+    display: flex;
+    justify-content: center;
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
+}
+
+p.specP::before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-right: 32px;
+}
+
+p.specP::after {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-left: 32px;
+}
+
+p.specP, p.specP::before, p.specP::after {
+    display: inline-flex;
+    align-items: center;
+}
+
 div.specialists {
     font-family: Comfortaa-Regular;
     font-style: normal;
     font-size: 48px;
     margin: 0 auto;
     margin-bottom: 100px;
-}
-
-div.specialists p.specP {
-    margin-left: 480px;
-    margin-bottom: 100px;
-}
-
-div.placeholder5 {
-    position: absolute;
-    width: 58px;
-    height: 3px;
-    background-color: #FF9432;
-    margin-left: 370px;
-    margin-top: 80px;
-    align-content: center;
-}
-
-div.placeholder6 {
-    position: absolute;
-    width: 58px;
-    height: 3px;
-    background-color: #FF9432;
-    margin-top: 80px;
-    margin-left: 1005px;
-    align-content: center;
 }
 
 div.specialistsItems {
@@ -299,37 +304,40 @@ div.specialistsItems div.arrows {
     margin-top: 180px;
 }
 
-.priem {
-    text-align: center;
-    font-family: Comfortaa-Regular;
-    font-size: 48px;
-    color: #000000;
-}
-
-div.placeholder7 {
-    position: absolute;
-    width: 58px;
-    height: 3px;
-    background-color: #FF9432;
-    margin-left: 355px;
-    margin-top: 30px;
-    align-content: center;
-}
-
-div.placeholder8 {
-    position: absolute;
-    width: 58px;
-    height: 3px;
-    background-color: #FF9432;
-    margin-top: 30px;
-    margin-left: 1050px;
-    align-content: center;
-}
-
-div.temp {
+div.mkAppointment {
     margin: 0 auto;
     width: 1236px;
     height: 1450px;
-    background: #f7aea4;
-    border-radius: 50px;
+    text-align: center;
 }
+
+div.mkAppointment p.priem {
+    text-align: center;
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
+}
+
+p.priem::before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-right: 32px;
+}
+
+p.priem::after {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 3px;
+    background-color: #FF9432;
+    margin-left: 32px;
+}
+
+p.priem, p.priem::before, p.priem::after {
+    display: inline-flex;
+    align-items: center;
+}
+
+
