@@ -45,9 +45,6 @@
     </div>
     <img src="img/BGPhoto.png" alt="no bgphoto :(" class="bgPhoto">
 
-    <div class="placeholder1"></div>
-    <div class="placeholder2"></div>
-
     <div class="services">
 
         <p class="servP">Наши услуги</p>
@@ -90,13 +87,9 @@
             allowfullscreen></iframe>
     </div>
 
-
-    <div class="placeholder3"></div>
-    <div class="placeholder4"></div>
-
     <div class="questions">
 
-        <p>Вопросы</p>
+        <p class="qQuestions">Вопросы</p>
 
         <div class="questionsItems">
 
@@ -123,9 +116,6 @@
         </div>
 
     </div>
-
-    <div class="placeholder5"></div>
-    <div class="placeholder6"></div>
 
     <div class="specialists">
 
@@ -163,13 +153,47 @@
 
     </div>
 
-    <div class="placeholder7"></div>
-    <div class="placeholder8"></div>
+    <!-- Подключение библиотеки jQuery  -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Подключение jQuery плагина Masked Input -->
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
 
-    <p class="priem">Записаться на прием</p>
+    <div class="mkAppointment">
 
-    <div class="temp">
-        
+        <p class="priem">Записаться на прием</p>
+
+        <div class="blank">
+            <div class="blankBorder">
+                <div class="orderparam">
+                    <input
+                    id="orderfirstName"
+                    name="orderfirstName"
+                    type="text"
+                    placeholder="Имя*"
+                    />
+                    <input
+                    id="orderlastName"
+                    name="orderlastName"
+                    type="text"
+                    placeholder="Фамилия*"
+                    />
+                    <input
+                    id="orderphoneNumber"
+                    name="orderphoneNumber"
+                    type="tel"
+                    placeholder="Телефон*"
+                    />
+                    <script>
+                    //Код jQuery, установливающий маску для ввода телефона элементу input
+                    //1. После загрузки страницы, когда все элементы будут доступны выполнить...
+                    $(function () {
+                    //2. Получить элемент, к которому необходимо добавить маску
+                    $("#orderphoneNumber").mask("+375(99) 999-99-99");
+                    });
+                    </script>
+            </div>
+        </div>
+
     </div>
 
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
