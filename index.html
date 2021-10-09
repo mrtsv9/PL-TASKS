@@ -27,23 +27,24 @@
         </nav>
     </header>
 
-    <div class="appointment">
-        <div class="border">
-            <p class="vetClin">Ветеренарная клиника</p>
-            <pre class="with">
+    <div class="appointment_container">
+        <div class="appointment">
+            <div class="border">
+                <p class="vetClin">Ветеренарная клиника</p>
+                <pre class="with">
 С заботой
 о Ваших питомцах</pre>
 
-            <form action="">
-                <input type="submit" value="Записаться на прием" class="signUp">
-            </form>
+                <form action="">
+                    <input type="submit" value="Записаться на прием" class="signUp">
+                </form>
 
-            <form action="order">
-                <input type="submit" value="Заказать звонок" class="order">
-            </form>
+                <form action="order">
+                    <input type="submit" value="Заказать звонок" class="order">
+                </form>
+            </div>
         </div>
     </div>
-    <img src="img/BGPhoto.png" alt="no bgphoto :(" class="bgPhoto">
 
     <div class="services">
 
@@ -153,51 +154,57 @@
 
     </div>
 
-    <!-- Подключение библиотеки jQuery  -->
-    <script src="assets/js/jquery.js"></script>
+    <script src="jquery.js"></script>
+    <!-- Подключение библиотеки jQuery -->
+    <script src="js/jquery.maskedinput.js"></script>
     <!-- Подключение jQuery плагина Masked Input -->
-    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 
     <div class="mkAppointment">
 
         <p class="priem">Записаться на прием</p>
 
-        <div class="blank">
-            <div class="blankBorder">
-                <div class="orderparam">
-                    <input
-                    id="orderfirstName"
-                    name="orderfirstName"
-                    type="text"
-                    placeholder="Имя*"
-                    />
-                    <input
-                    id="orderlastName"
-                    name="orderlastName"
-                    type="text"
-                    placeholder="Фамилия*"
-                    />
-                    <input
-                    id="orderphoneNumber"
-                    name="orderphoneNumber"
-                    type="tel"
-                    placeholder="Телефон*"
-                    />
-                    <script>
-                    //Код jQuery, установливающий маску для ввода телефона элементу input
-                    //1. После загрузки страницы, когда все элементы будут доступны выполнить...
-                    $(function () {
-                    //2. Получить элемент, к которому необходимо добавить маску
-                    $("#orderphoneNumber").mask("+375(99) 999-99-99");
-                    });
-                    </script>
+        <div class="apr_content">
+            <div class="blanks_border">
+                <div class="blanks">
+                    <input id="firstName" name="firstName" type="text" placeholder="Имя*" />
+                    <input id="lastName" name="lastName" type="text" placeholder="Фамилия*" />
+                    <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Телефон*" />
+                </div>
+
+                <div class="your_pet">
+                    <p class="pet">Ваш питомец*</p>
+        
+                    <ul class="radio">
+                        <li>
+                            <input type="radio" id="cat">
+                            <label for="cat">Кот</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="rat">
+                            <label for="rat">Грызун</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="dog">
+                            <label for="dog">Собака</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="helicopter">
+                            <label for="helicopter">Другое</label>
+                        </li>
+                    </ul>
+        
+                </div>
+
             </div>
+        
         </div>
+
+       
 
     </div>
 
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <br>
 
 </body>
 

@@ -12,6 +12,7 @@
 
 body {
     max-width: 1440px;
+    margin: auto;
 }
 
 header {
@@ -41,7 +42,6 @@ div.logoText {
 nav {
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 50px;
 }
 
 ul.topNav {
@@ -62,18 +62,23 @@ ul.topNav li a {
     color: black;
 }
 
-div.appointment {
-    position: absolute;
-    width: 506px;
-    height: 668px;
-    left: 102px;
-    top: 243px;
-    background: #FFFFFF;
-    border-radius: 50px;
-    margin: 0 auto;
+.appointment_container {
+    height: 890px;
+    width: 1440px;
+    background:url(img/BGPhoto.png);
 }
 
-div.border {
+.appointment {
+    position: absolute; 
+    display: flex;
+    margin: 120px 0 0 110px;
+    background: #FFFFFF;
+    width: 506px;
+    height: 668px;
+    border-radius: 50px;
+}
+
+.border {
     width: 480px;
     height: 640px;
     border-radius: 50px;
@@ -124,11 +129,6 @@ div.border input.order {
     line-height: 27px;
     color: #FF9432;
     margin-top: 30px;
-}
-
-div.bgPhoto {
-    height: 890px;
-    width: 1440px;
 }
 
 div.services {
@@ -350,19 +350,75 @@ p.priem, p.priem::before, p.priem::after {
     align-items: center;
 }
 
-div.blank {
+div.apr_content {
     display: flex;
     margin: auto;
     width: 1236px;
     height: 1450px;
-    background: #fcd6d1;
+    background: #fdefe2;
     border-radius: 50px;
 }
 
-div.blankBorder {
+div.blanks_border {
     margin: auto;
-    width: 1198px;
-    height: 1402px;
     border: 2px dashed #FF9432;
     border-radius: 50px;
+    width: 1200px;
+    height: 1400px;
+}
+
+div.blanks {
+    display: block;
+    width: 1062px;
+    margin: 40px auto;
+    height: 300px;
+}
+
+div.blanks input {
+    width: 1062px;
+    height: 73px;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    color: #000000;
+    opacity: 0.5;
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.your_pet {
+    margin: 110px 0 0 70px;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    text-align: left;
+}
+
+.your_pet ul {
+    columns: 2;
+    list-style-type: none;
+}
+
+.your_pet ul li {
+    padding: 12px;
+}
+
+.your_pet ul li input {
+    display: none;
+}
+
+.your_pet ul li label::before {
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #000000;
+    border-radius: 32px;
+    box-sizing: border-box;    
+    margin-right: 32px;
+    transform: translate(0%, 15%);
+}
+
+input[type=radio]:checked+label::before {
+    
 }
