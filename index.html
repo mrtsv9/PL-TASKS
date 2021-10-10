@@ -154,7 +154,7 @@
 
     </div>
 
-    <script src="jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <!-- Подключение библиотеки jQuery -->
     <script src="js/jquery.maskedinput.js"></script>
     <!-- Подключение jQuery плагина Masked Input -->
@@ -170,37 +170,155 @@
                     <input id="firstName" name="firstName" type="text" placeholder="Имя*" />
                     <input id="lastName" name="lastName" type="text" placeholder="Фамилия*" />
                     <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Телефон*" />
+                    <script>
+                        //Код jQuery, установливающий маску для ввода телефона элементу input
+                        //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+                        $(function () {
+                            //2. Получить элемент, к которому необходимо добавить маску
+                            $("#phoneNumber").mask("+375(99) 999-99-99");
+                        });
+                    </script>
                 </div>
 
                 <div class="your_pet">
+
                     <p class="pet">Ваш питомец*</p>
-        
+
                     <ul class="radio">
                         <li>
-                            <input type="radio" id="cat">
+                            <input type="radio" id="cat" name="1">
                             <label for="cat">Кот</label>
                         </li>
                         <li>
-                            <input type="radio" id="rat">
+                            <input type="radio" id="rat" name="1">
                             <label for="rat">Грызун</label>
                         </li>
                         <li>
-                            <input type="radio" id="dog">
+                            <input type="radio" id="dog" name="1">
                             <label for="dog">Собака</label>
                         </li>
                         <li>
-                            <input type="radio" id="helicopter">
+                            <input type="radio" id="helicopter" name="1">
                             <label for="helicopter">Другое</label>
                         </li>
                     </ul>
-        
+
+                    <p class="pet">Отделения</p>
+
+                    <ul class="department">
+                        <li>
+                            <input type="checkbox" id="ther">
+                            <label for="ther">Терапевтическое</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="neur">
+                            <label for="neur">Неврологическое</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="vacc">
+                            <label for="vacc">Вакцинация</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="lab">
+                            <label for="lab">Лаборатория</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="surg">
+                            <label for="surg">Хирургическое</label>
+                        </li>
+                    </ul>
+
+                    <ul class="date">
+
+                        <li>
+                            <div>
+                                <p class="pet">Дата приёма*</p>
+                                <div class="calendar">
+                                    <input type="date" id="date">
+                                    <script>
+                                        let element = document.getElementById('dateTransfer');
+                                        var today = new Date();
+                                        var dd = today.getDate();
+                                        var mm = today.getMonth() + 1;
+                                        var yyyy = today.getFullYear();
+                                        var ddmin = dd;
+                                        var ddmax = dd + 20;
+
+                                        if (ddmin < 10) {
+                                            ddmin = '0' + ddmin
+                                        }
+                                        if (mm < 10) {
+                                            mm = '0' + mm
+                                        }
+                                        min = yyyy + '-' + mm + '-' + ddmin;
+                                        max = yyyy + '-' + mm + '-' + ddmax;
+                                        element.setAttribute("min", min);
+                                        element.setAttribute("value", min);
+                                        element.setAttribute("max", max);
+                                    </script>
+                                    <img src="img/calendar.png" alt="no calendar">
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <p class="pet">Доступное время приема*</p>
+                                <div class="calendar">
+                                    <input type="time" id="time">
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <div class="buttons">
+                        <button class="btn_sign">
+                            <span>Записаться</span>
+                            <img src="img/heart.svg" alt="no heart"></button>
+                        <button class="btn_clr">Очистить</button>
+                    </div>
+
                 </div>
 
             </div>
-        
+
         </div>
 
-       
+        <div class="contacts">
+
+            <p class="cont">Контакты</p>
+
+            <div class="info">
+
+                <div class="map">
+                    <img src="img/orange_heart.svg" alt="no heart" class="heart">
+                    <img src="img/shadow.svg" alt="no shadow" class="shadow">
+                </div>
+                
+                <div class="cont">
+                    <p class="p1">
+                        Режим работы:
+                        пн-пт: 8:00-20:00
+                        сб-вс: 10:00-18:00
+                    </p>
+                    <p class="p2">
+                        Телефон справки:
+                        + 375 (29) 123-12-31
+                    </p>
+                    <p class="p3">
+                        E-mail
+                        pets@pets.by
+                    </p>
+                    <p class="p4">
+                        г. Минск, ул. Солнечная 1,
+                        222222
+                    </p>
+                </div>
+
+           </div>
+
+        </div>
 
     </div>
 
