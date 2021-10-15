@@ -35,11 +35,11 @@
 С заботой
 о Ваших питомцах</pre>
 
-                <form action="">
+                <form action="#gotoPriem">
                     <input type="submit" value="Записаться на прием" class="signUp">
                 </form>
 
-                <form action="order">
+                <form action="order" class="">
                     <input type="submit" value="Заказать звонок" class="order">
                 </form>
             </div>
@@ -162,7 +162,7 @@
 
     <div class="mkAppointment">
 
-        <p class="priem">Записаться на прием</p>
+        <p class="priem" id="gotoPriem">Записаться на прием</p>
 
         <div class="apr_content">
             <div class="blanks_border">
@@ -297,7 +297,7 @@
                 <img src="img/orange_heart.svg" alt="no heart" class="heart">
                 <img src="img/shadow.svg" alt="no shadow" class="shadow">
             </div>
-            
+
             <div class="cont">
                 <p class="p1">
                     Режим работы:
@@ -318,7 +318,7 @@
                 </p>
             </div>
 
-       </div>
+        </div>
 
     </div>
 
@@ -332,6 +332,46 @@
     </footer>
 
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <div class="popup-bg">
+        <div class="popup">
+            <div class="popup-border">
+                
+                <div class="order-a-call">
+                    <p>Заказать звонок</p>
+                    <img src="img/close.svg" alt="">
+                </div>
+
+                <div class="inputs">
+
+                    <ul>
+
+                        <li>
+                            <span>ФИО*</span>
+                            <input id="firstName" name="firstName" type="text" placeholder="" />
+                        </li>
+
+                        <li>
+                            <span>Телефон*</span>
+                            <input id="firstName" name="firstName" type="text" placeholder="" />
+                        </li>
+
+                        <li>
+                            <span>Кратко опишите Вашу проблему*</span>
+                            <input id="firstName" name="firstName" type="text" placeholder="" />
+                        </li>
+
+                    </ul>
+
+                    <div class="popup_order">
+                        <button class="popup_btn_order">Заказать звонок</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 
