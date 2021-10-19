@@ -621,7 +621,7 @@ footer p {
     width: 100%; 
     height: 100%;
     background: rgba(0,0,0,0.8);
-    /* display: none; */
+    display: none;
 }
 
 .popup {
@@ -707,4 +707,8 @@ div.popup_order {
     background: linear-gradient(90deg, #FF9432 0%, #FFD232 100%);
     border: 0px;
     border-radius: 50px;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
