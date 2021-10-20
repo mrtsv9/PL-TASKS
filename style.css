@@ -682,12 +682,21 @@ footer p {
     margin-bottom: 30px;
 }
 
+.inputs li span {
+    margin-bottom: 10px;
+}
+
 .inputs li input{
-    width: 725px;
+    width: 700px;
     height: 75px;
     background: #FFF9F3;
     border: 2px solid #FF9432;
     border-radius: 50px;
+    font-family: Comfortaa-Regular;
+    font-size: 30px;
+    line-height: 33px;
+    color: #000000;
+    padding-left: 30px;
 }
 
 .inputs li:last-child input {
