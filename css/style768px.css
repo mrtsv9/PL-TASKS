@@ -76,7 +76,7 @@
     .appointment_container {
         height: 890px;
         width: 1440px;
-        background:url(img/BGPhoto.png);
+        background:url(../img/BGPhoto.png);
     }
     
     .appointment {
