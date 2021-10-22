@@ -39,6 +39,11 @@ div.logoText {
     margin-right: 133px;
 }
 
+div.logoText p:last-child {
+    text-transform: capitalize;
+    margin-top: -30px;
+}
+
 nav {
     margin: 0 auto;
     margin-top: 40px;
@@ -70,7 +75,7 @@ ul.topNav li a.quest-orange {
 .appointment_container {
     height: 890px;
     width: 1440px;
-    background:url(img/BGPhoto.png);
+    background:url(../img/BGPhoto.png);
 }
 
 .appointment {
@@ -449,7 +454,7 @@ input[type=radio]:checked+label::before {
 input[type=checkbox]:checked+label::before {
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(img/check_mark.svg);
+    background-image: url(../img/check_mark.svg);
 } 
 
 div.calendar {
@@ -548,7 +553,7 @@ div.map {
     position: relative;
     width: 852px;
     height: 852px;
-    background-image: url(img/map.png);
+    background-image: url(../img/map.png);
 }
 
 div.map img.heart {
