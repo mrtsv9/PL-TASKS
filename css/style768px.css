@@ -604,8 +604,12 @@ div.cont p {
     color: #FFFFFF;
 }
 
+div.cont p:first-child {
+    margin: 45px 0 0 20px;
+}
+
 .p1 {
-    width: 220px;
+    width: 220px;;
 }
 
 .p2 {
@@ -659,8 +663,8 @@ footer p {
 .popup {
     position: absolute;
     background: #ffffff;
-    width: 820px;
-    height: 800px;
+    width: 620px;
+    height: 700px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -672,8 +676,8 @@ footer p {
 }
 
 .popup-border {
-    width: 790px;
-    height: 760px;
+    width: 600px;
+    height: 680px;
     border-radius: 50px;
     border: 2px dashed #FF9432;
 }
@@ -689,11 +693,12 @@ footer p {
     display: flex;
     font-size: 36px;
     color: #FF9532;
+    margin-bottom: 10px;
 }
 
 .order-a-call img{
     position: absolute;
-    top: 67px;
+    top: 50px;
     right: 30px;
     cursor: pointer;
 }
@@ -714,8 +719,8 @@ footer p {
 }
 
 .inputs li input{
-    width: 700px;
-    height: 75px;
+    width: 500px;
+    height: 70px;
     background: #FFF9F3;
     border: 2px solid #FF9432;
     border-radius: 50px;
