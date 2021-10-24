@@ -72,7 +72,7 @@ ul.topNav li a.quest-orange {
     color: #FF9432;
 }
 
-div.adapt-nav {
+div.adapt_nav {
     top: 0px;
     right: 0px;
     display: none;
@@ -114,7 +114,7 @@ div.adapt_nav_popup div img {
     cursor: pointer;
 }
 
-div.adapt_nav_popup div ul {
+div.adapt_nav_popup ul {
     position: absolute;
     top: 21px;
     right: 49px;
@@ -125,13 +125,13 @@ div.adapt_nav_popup div ul {
     justify-content: right;
 }
 
-div.adapt_nav_popup div ul li {
+div.adapt_nav_popup ul li {
     text-align: right;
     width: 140px;
     list-style-type: none;
 }
 
-div.adapt_nav_popup div ul li a {
+div.adapt_nav_popup ul li a {
     font-family: "Comfortaa-Regular";
     font-size: 22px;
     line-height: 27px;
