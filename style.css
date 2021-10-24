@@ -600,6 +600,7 @@ footer {
     background: #864000;
     justify-content: center;
     text-align: center;
+    margin-top: -12px;
 }
 
 footer div.socials {
