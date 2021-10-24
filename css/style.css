@@ -104,15 +104,15 @@ div.border p.vetClin {
     text-align: left;
     margin-left: 66px;
     color: #FF9432;
+    margin-bottom: 90px;
 }
 
-div.border pre.with {
+div.border p {
     font-family: Comfortaa-Regular;
     font-size: 36px;
     text-align: left;
     margin-left: 66px;
-    color: black;
-    margin-bottom: 0px;
+    line-height: 32px;
 }
 
 div.border input.signUp {
@@ -183,6 +183,7 @@ div.serviceItems {
     width: 1440px;
     display: flex;
     margin-bottom: 100px;
+    justify-content: space-around;
 }
 
 div.serviceItems div img {
