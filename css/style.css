@@ -75,7 +75,7 @@ ul.topNav li a.quest-orange {
 div.adapt-nav {
     top: 0px;
     right: 0px;
-    display: none;
+    /* display: none; */
     cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ div.adapt-nav-popup {
     z-index: 2;
     display: flex;
     justify-content: right;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 }
 
@@ -128,10 +128,11 @@ div.adapt-nav-popup div ul {
 div.adapt-nav-popup div ul li {
     text-align: right;
     width: 140px;
+    list-style-type: none;
 }
 
 div.adapt-nav-popup div ul li a {
-    font-family: "MontserratAlternates-Bold";
+    font-family: "Comfortaa-Regular";
     font-size: 22px;
     line-height: 27px;
     color: #424242;
