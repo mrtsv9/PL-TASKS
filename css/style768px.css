@@ -1,0 +1,168 @@
+@media screen and (max-width:1000px) {
+    @font-face {
+        font-family: 'Comfortaa-Regular';
+        src: url(../fonts/Comfortaa-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: 'Comfortaa-Bold';
+        src: url(../fonts/Comfortaa-Bold.ttf);
+    }
+    
+    @import url(default.css);
+    
+    body {
+        max-width: 1440px;
+        margin: auto;
+    }
+    
+    header {
+        display: flex;
+        width: 1440px;
+        margin: 0 auto;
+        background-color: #FDFDFD;
+    }
+    
+    img.logo {
+        margin-left: 100px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    
+    div.logoText {
+        font-family: Comfortaa-Regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 40px;
+        margin-left: 32px;
+        color: #FF9432;
+        margin-right: 133px;
+    }
+    
+    div.logoText p:last-child {
+        text-transform: capitalize;
+        margin-top: -30px;
+    }
+    
+    nav {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    ul.topNav {
+        list-style-type: none;
+        font-family: Comfortaa-Regular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: black;
+    }
+    
+    ul.topNav li {float: left;}
+    
+    ul.topNav li a {
+        display: inline-block;
+        text-align: center;
+        padding-right: 77px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    ul.topNav li a.quest-orange {
+        color: #FF9432;
+    }
+    
+    .appointment_container {
+        height: 890px;
+        width: 1440px;
+        background:url(../img/BGPhoto.png);
+    }
+    
+    .appointment {
+        position: absolute; 
+        display: flex;
+        margin: 120px 0 0 110px;
+        background: #FFFFFF;
+        width: 506px;
+        height: 668px;
+        border-radius: 50px;
+    }
+    
+    .border {
+        width: 480px;
+        height: 640px;
+        border-radius: 50px;
+        border: dashed 3px #FF9432;
+        margin-left: 11px;
+        margin-top: 12px;
+        text-align: center;
+    }
+    
+    div.border p.vetClin {
+        font-family: Comfortaa-Regular;
+        font-size: 48px;
+        text-align: left;
+        margin-left: 66px;
+        color: #FF9432;
+    }
+    
+    div.border pre.with {
+        font-family: Comfortaa-Regular;
+        font-size: 36px;
+        text-align: left;
+        margin-left: 66px;
+        color: black;
+        margin-bottom: 0px;
+    }
+    
+    div.border input.signUp {
+        width: 398px;
+        height: 54px;
+        background: linear-gradient(90deg, #FF9432 0%, #FFD232 99.99%, rgba(255, 148, 50, 0) 100%, #FFCF24 100%);
+        border-radius: 30px;
+        border: 0px;
+        font-family: Comfortaa-Regular;
+        font-size: 24px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-top: 74px;
+    }
+    
+    div.border input.order {
+        width: 398px;
+        height: 54px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        border: 2px solid #FF9432;
+        font-family: Comfortaa-Regular;
+        font-size: 24px;
+        line-height: 27px;
+        color: #FF9432;
+        margin-top: 30px;
+    }
+    
+    div.services {
+        text-align: center;
+        margin-top: 100px;
+        font-family: Comfortaa-Regular;
+        font-style: normal;
+        font-size: 48px;
+    }
+    
+    p.servP {
+        display: flex;
+        justify-content: center;
+        font-family: Comfortaa-Regular;
+        font-size: 48px;
+    }
+    
+    p.servP::before {
+        content: '';
+        display: inline-block;
+        width: 58px;
+        height: 3px;
+        background-color: #FF9432;
+        margin-right: 32px;
+    }
+}
