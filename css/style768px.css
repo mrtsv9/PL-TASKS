@@ -25,6 +25,15 @@ header {
     align-items: center;
 }
 
+nav {
+    display: none;
+}
+
+div.adapt-nav {
+    margin-left: 280px;
+    display: flex;
+}
+
 img.logo {
     margin-left: 40px;
 }
