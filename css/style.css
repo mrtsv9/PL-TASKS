@@ -482,7 +482,7 @@ div.blanks input {
     padding: 12px;
 }
 
-.your_pet ul.radio li input {
+.your_pet ul.radio li input[type=radio] {
     display: none;
 }
 
@@ -503,6 +503,21 @@ input[type=radio]:checked+label::before {
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='8' viewBox='-4' fill='none' xmlns='http://www.w3.org/2000/svg%27%3e%3ccircle cx='4' cy='4' r='4' fill='black'/%3e%3c/svg%3e");
 }   
+
+#any {
+    width: 320px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    color: #000000;
+    opacity: 0.5;
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-left: -10px;
+}
 
 .your_pet ul.department li input {
     display: none;
