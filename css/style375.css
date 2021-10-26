@@ -719,8 +719,8 @@
     .popup {
         position: absolute;
         background: #ffffff;
-        width: 620px;
-        height: 700px;
+        width: 370px;
+        height: 600px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -732,22 +732,22 @@
     }
     
     .popup-border {
-        width: 600px;
-        height: 680px;
+        width: 350px;
+        height: 580px;
         border-radius: 50px;
         border: 2px dashed #FF9432;
     }
     
     .order-a-call {
         display: flex;
-        font-size: 36px;
+        font-size: 20px;
         color: #FF9532;
         justify-content: center;
     }
     
     .order-a-call p{
         display: flex;
-        font-size: 36px;
+        font-size: 20px;
         color: #FF9532;
         margin-bottom: 10px;
     }
@@ -766,7 +766,7 @@
     .inputs li {
         display: block;
         justify-content: left;
-        font-size: 28px;
+        font-size: 18px;
         margin-bottom: 30px;
     }
     
@@ -775,8 +775,8 @@
     }
     
     .inputs li input{
-        width: 500px;
-        height: 70px;
+        width: 290px;
+        height: 45px;
         background: #FFF9F3;
         border: 2px solid #FF9432;
         border-radius: 50px;
@@ -784,11 +784,12 @@
         font-size: 30px;
         line-height: 33px;
         color: #000000;
-        padding-left: 30px;
+        padding-left: 10px;
+        margin-top: 10px;
     }
     
     .inputs li:last-child input {
-        height: 120px ;
+        height: 100px ;
     }
     
     div.popup_order {
@@ -799,7 +800,7 @@
     }
     
     .popup_btn_order {
-        width: 290px;
+        width: 200px;
         height: 70px;
         align-items: center;
         justify-content: center;
