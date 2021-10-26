@@ -481,6 +481,21 @@ input[type=checkbox]:checked+label::before {
     background-image: url(../img/check_mark.svg);
 } 
 
+#any {
+    width: 120px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    color: #000000;
+    opacity: 0.5;
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+
 ul.date {
     margin: 0;
 }
