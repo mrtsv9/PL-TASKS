@@ -10,16 +10,20 @@
 
 @import url(default.css);
 
+html {
+    background-color: rgb(250, 246, 240);
+}
+
 body {
     max-width: 1440px;
     margin: auto;
+    background-color: white;
 }
 
 header {
     display: flex;
     width: 1440px;
     margin: 0 auto;
-    background-color: #FDFDFD;
 }
 
 img.logo {
