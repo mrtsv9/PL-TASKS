@@ -696,6 +696,11 @@
         width: 200px;
         padding-top: 60px;
     }
+
+    footer div.socials img:hover {
+        background-color: #FF9432;
+        color: #FF9432;
+    }
     
     footer p {
         text-align: center;

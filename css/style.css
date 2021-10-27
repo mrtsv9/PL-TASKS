@@ -699,6 +699,10 @@ footer div.socials {
     padding-top: 60px;
 }
 
+footer div.socials img:hover {
+    background-color: #FF9432;
+}
+
 footer p {
     text-align: center;
     font-family: Comfortaa-Regular;
