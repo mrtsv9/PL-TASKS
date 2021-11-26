@@ -17,7 +17,7 @@
             <option id="seledka4" value="400">Селедка между шубой</option>
         </select>
         <input id="amount" type="number" value="10" placeholder="Количество продуктов">
-        <input id="add" type="button" value="Добавить" onclick="onadd()">
+        <button id="add" onclick="onadd()">Добавить</button>
 
     <table>
         <tr>
@@ -48,17 +48,17 @@
         }
 
         function find(name, calories, amount) {
-            let calories = parseInt(calories);
-            let amount = parseInt(amount);
+            let tempCalories = parseInt(calories);
+            let tempAmount = parseInt(amount);
             
             var table = document.getElementsByClassName(name);
             var Row = document.getElementById(name);
             if (Row != null) {
-                var tempAmount = Row.getElementsByClassName('amount');
+                var count = Row.getElementsByClassName('amount');
                 var total = Row.getElementsByClassName("total");
-                let param = parseInt(tempAmount[0].innerText);
-                if (amount > 0) {
-                    total[0].innerText = (param + calories) * amount;
+                let param = parseInt(count[0].innerText);
+                if (tempAmount > 0) {
+                    total[0].innerText = (param + tempCalories) * tempAmount;
                     count[0].innerText = param + amount;
                 }
             }
