@@ -32,41 +32,43 @@ html {
    
    .orbit1 {
     position: absolute;
-    right: 41%;
-    top: 31%;
+    right: 40%;
+    top: 33%;
     animation: Orbita 3s linear infinite;
   } 
   
   .orbit2 {
     position: absolute;
     animation: Orbita2 3s linear infinite; 
-    right: 41%;
-    top: 31%;
+    right: 40%;
+    top: 33%;
   }
 
    .orbit3 {
     position: absolute;
     animation: Orbita3 3s linear infinite; 
-    right: 41%;
-    top: 31%;
+    right: 40%;
+    top: 33%;
   } 
 
   .orbit4 {
     position: absolute;
     animation: Orbita4 3s linear infinite; 
-    right: 41%;
-    top: 31%;
+    right: 40%;
+    top: 33%;
   }
 
     @keyframes Orbita {
         0% { transform: rotate(0deg) translateX(250px) rotate(0deg); border-radius: 0%;
             background: orange;}
-        30% { border-radius: 20%;
+        30% { border-radius: 10%;
             background: red;}
+            40% { border-radius: 20%;
+                background: red;}
         50% { border-radius: 50%;
             background: blue;}
         80% { border-radius: 20%;}
-        100% { transform: rotate(360deg) translateX(250px) rotate(0deg); border-radius: 0%;
+        100% { transform: rotate(250deg) translateX(250px) rotate(0deg); border-radius: 0%;
             background: orange;}
         }
     
